@@ -87,9 +87,25 @@ window.addEventListener('load', applyStylesBasedOnZoom);
 window.addEventListener('resize', applyStylesBasedOnZoom);
 
 const images = [
-	"img/desktop/IMG_0387.jpg",
-	"img/desktop/IMG_20231016_173448695.jpg",
-	"img/desktop/IMG_20231016_173618686_HDR.jpg"
+	"img/desktop/1.jpg",
+	"img/desktop/2.jpg",
+	"img/desktop/3.jpg",
+	"img/desktop/4.jpg",
+	"img/desktop/5.jpg",
+	"img/desktop/6.jpg",
+	"img/desktop/7.jpg",
+	"img/desktop/8.jpg",
+	"img/desktop/9.jpg",
+	"img/desktop/10.jpg",
+	"img/desktop/11.jpg",
+	"img/desktop/12.jpg",
+	"img/desktop/13.jpg",
+	"img/desktop/14.jpg",
+	"img/desktop/15.jpg",
+	"img/desktop/16.jpg",
+	"img/desktop/17.jpg",
+	"img/desktop/18.jpg",
+	"img/desktop/19.jpg"
   ];
   
   let currentIndex = 0;
@@ -124,3 +140,12 @@ function openGallery() {
 	currentIndex = (currentIndex - 1 + images.length) % images.length;
 	showImage(currentIndex);
   }
+
+  function openGalleryFrom(imgElement) {
+	const clickedSrc = imgElement.getAttribute("src");
+	const index = images.findIndex(src => src === clickedSrc);
+	if (index !== -1) {
+		currentIndex = index;
+		openGallery();
+	}
+}
