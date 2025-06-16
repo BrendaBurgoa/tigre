@@ -87,7 +87,7 @@ window.addEventListener('load', applyStylesBasedOnZoom);
 window.addEventListener('resize', applyStylesBasedOnZoom);
 
 const images = [
-	"img/desktop/1.jpg",
+	"img/desktop/9.jpg",
 	"img/desktop/2.jpg",
 	"img/desktop/3.jpg",
 	"img/desktop/4.jpg",
@@ -95,7 +95,7 @@ const images = [
 	"img/desktop/6.jpg",
 	"img/desktop/7.jpg",
 	"img/desktop/8.jpg",
-	"img/desktop/9.jpg",
+	"img/desktop/1.jpg",
 	"img/desktop/10.jpg",
 	"img/desktop/11.jpg",
 	"img/desktop/12.jpg",
