@@ -83,7 +83,12 @@
     flex-wrap: wrap;
     gap: 1rem 0;
   }
-  
+  .row_desc h3 {
+	  margin-bottom: 0.8em;
+  }
+  .row_desc p {
+	  margin-bottom: 1em;
+  }
   /* Sistema de 12 columnas */
   .w-100 { width: 100%; }
   .w-75  { width: 75%; }
