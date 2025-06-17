@@ -84,10 +84,11 @@
     gap: 1rem 0;
   }
   .row_desc h3 {
+	  margin-top: 1.2em;
 	  margin-bottom: 0.8em;
   }
   .row_desc p {
-	  margin-bottom: 1em;
+	  margin-bottom: 0.8em;
   }
   /* Sistema de 12 columnas */
   .w-100 { width: 100%; }
