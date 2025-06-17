@@ -78,6 +78,11 @@
     flex-wrap: wrap;
     gap: 1rem 0;
   }
+  .row_desc {
+    display: block;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+  }
   
   /* Sistema de 12 columnas */
   .w-100 { width: 100%; }
