@@ -149,3 +149,46 @@ function openGallery() {
 		openGallery();
 	}
 }
+
+document.addEventListener("keydown", (event) => {
+	const galleryPopup = document.getElementById("galleryPopup");
+	if (galleryPopup.style.display !== "flex") return;
+
+	if (event.key === "ArrowLeft") {
+		event.preventDefault();
+		prevImage();
+	} else if (event.key === "ArrowRight") {
+		event.preventDefault();
+		nextImage();
+	} else if (event.key === "Escape") {
+		closeGallery();
+	}
+});
+
+const carousel = document.querySelector(".carousel");
+let swipeStart = null;
+
+carousel.addEventListener("pointerdown", (event) => {
+	if (event.pointerType === "mouse" || event.target.closest(".nav")) return;
+	swipeStart = { x: event.clientX, y: event.clientY };
+	carousel.setPointerCapture(event.pointerId);
+});
+
+carousel.addEventListener("pointerup", (event) => {
+	if (!swipeStart) return;
+
+	const deltaX = event.clientX - swipeStart.x;
+	const deltaY = event.clientY - swipeStart.y;
+	swipeStart = null;
+
+	if (Math.abs(deltaX) < 50 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+	if (deltaX < 0) {
+		nextImage();
+	} else {
+		prevImage();
+	}
+});
+
+carousel.addEventListener("pointercancel", () => {
+	swipeStart = null;
+});

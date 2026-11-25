@@ -171,7 +171,7 @@ a:hover {
 }
 
 h1 {
-    font-family: "Circular-Bold";
+    font-family: "Circular-Medium";
     color: rgb(16, 16, 16);
     font-size: 2.5rem;
 }
@@ -183,7 +183,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Circular-Bold";
+  font-family: "Circular-Medium";
   color: #171717;
   font-size: 1.3rem;
 }
@@ -416,12 +416,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .cardProject h3 {
-  font-family: "Circular-Bold";
+  font-family: "Circular-Medium";
   color: #4D4D4D;
 }
 
 .cardProject h5 {
-    font-family: "Circular-Bold";
+    font-family: "Circular-Medium";
     color: #999;
     margin-top:2px;
 }
@@ -513,14 +513,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .teamMember h3 {
-  font-family: "Circular-Black";
+  font-family: "Circular-Medium";
   color: #333333;
   margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .teamMember h4 {
-  font-family: "Circular-Bold";
+  font-family: "Circular-Medium";
   color: #333333;
   text-align: center;
 }
@@ -595,7 +595,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .award-box h3 {
   color: #354D2D;
-  font-family: "Circular-Black";
+  font-family: "Circular-Bold";
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -662,7 +662,7 @@ footer {
 
 footer h3 {
   color: white;
-  font-family: "Circular-Black";
+  font-family: "Circular-Bold";
   cursor: pointer;
 }
 
@@ -970,6 +970,7 @@ footer .socialMedia img {
     align-items: center;
     max-width: 90%;
     max-height: 90%;
+    touch-action: pan-y;
   }
   
   .carousel img {
